@@ -7,11 +7,15 @@
        https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="bookRepository"
-          class="com.cognizant.module5.exercise2.BookRepository"/>
+          class="com.cognizant.module5.exercise7.BookRepository"/>
 
     <bean id="bookService"
-          class="com.cognizant.module5.exercise2.BookService">
+          class="com.cognizant.module5.exercise7.BookService">
 
+        <!-- Constructor Injection -->
+        <constructor-arg ref="bookRepository"/>
+
+        <!-- Setter Injection -->
         <property name="bookRepository"
                   ref="bookRepository"/>
 
