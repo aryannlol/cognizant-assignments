@@ -1,0 +1,26 @@
+.card {
+  border: 1px solid #ccc;
+  border-left-width: 5px;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.card--full {
+  font-weight: bold;
+}
+
+.expanded {
+  background: #eef6ff;
+}
+
+.badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: white;
+}
+
+.badge-passed { background: green; }
+.badge-failed { background: red; }
+.badge-pending { background: grey; }
